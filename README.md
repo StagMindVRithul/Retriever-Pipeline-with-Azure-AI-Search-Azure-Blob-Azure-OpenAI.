@@ -39,7 +39,7 @@ The notebook walks through **document ingestion, embeddings, indexing, retrieval
 ## ⚙️ Setup & Installation
 
 ### 🔑 Prerequisites
-- Python **3.9+**
+- Python **3.11+**
 - Active **Azure Subscription**
 - Provisioned Azure services:
   - **Azure Cognitive Search**
@@ -55,18 +55,19 @@ pip install azure-search-documents azure-identity azure-core azure-storage-blob 
 Create a `.env` file in the project root with the following values:
 
 ```ini
-AZURE_SEARCH_ENDPOINT=your-search-endpoint
-AZURE_SEARCH_KEY=your-search-key
-AZURE_SEARCH_INDEX=your-index-name
+AZURE_SEARCH_ENDPOINT=....
+AZURE_SEARCH_KEY=....
+AZURE_BLOB_CONN_STR=....
+AZURE_OPENAI_ENDPOINT=....
+AZURE_OPENAI_KEY=....
+AZURE_OPENAI_DEPLOYMENT=....
+AZURE_OPENAI_API_VERSION=....
+AZURE_OPENAI_CHAT_DEPLOYMENT=....
+AZURE_SEARCH_INDEX=....
+AZURE_BLOB_CONTAINER=....
+AZURE_AI_SERVICE=....
+AZURE_AI_SERVICE_ENDPOINT=.....
 
-AZURE_BLOB_CONN_STR=your-blob-connection-string
-AZURE_BLOB_CONTAINER=your-container-name
-
-AZURE_OPENAI_ENDPOINT=your-openai-endpoint
-AZURE_OPENAI_KEY=your-openai-key
-AZURE_OPENAI_DEPLOYMENT=your-embedding-deployment
-AZURE_OPENAI_CHAT_DEPLOYMENT=your-chat-deployment
-AZURE_OPENAI_MODEL_DIMENSIONS=1024
 ```
 
 ---
